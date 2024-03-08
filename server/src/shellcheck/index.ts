@@ -199,7 +199,7 @@ function mapShellCheckResult({ uri, result }: { uri: string; result: ShellCheckR
     const id = `shellcheck|${comment.code}|${range.start.line}:${range.start.character}-${range.end.line}:${range.end.character}`
 
     const diagnostic: LSP.Diagnostic = {
-      message: comment.message,
+      message: `SC${comment.code}: ${comment.message}`,
       severity: LEVEL_TO_SEVERITY[comment.level] || LSP.DiagnosticSeverity.Error,
       code: `SC${comment.code}`,
       source: 'shellcheck',
