@@ -1,5 +1,14 @@
 # Bash IDE
 
+## 1.43.0
+- Upgrade language server to 5.4.2 (treesitter upgrade).
+
+## 1.42.0
+- Upgrade language server to 5.4.0 (format document capability).
+
+## 1.41.0
+- Upgrade language server to 5.2.0
+
 ## 1.40.0
 - Upgrade language server to 5.1.1 (rename capability).
 

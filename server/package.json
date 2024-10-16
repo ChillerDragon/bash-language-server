@@ -3,7 +3,7 @@
   "description": "A language server for Bash",
   "author": "Mads Hartmann",
   "license": "MIT",
-  "version": "5.1.2",
+  "version": "5.4.2",
   "main": "./out/server.js",
   "typings": "./out/server.d.ts",
   "bin": {
@@ -17,14 +17,15 @@
     "node": ">=16"
   },
   "dependencies": {
+    "editorconfig": "2.0.0",
     "fast-glob": "3.3.2",
     "fuzzy-search": "3.2.1",
     "node-fetch": "2.7.0",
-    "turndown": "7.1.2",
+    "turndown": "7.2.0",
     "vscode-languageserver": "8.0.2",
-    "vscode-languageserver-textdocument": "1.0.11",
-    "web-tree-sitter": "0.20.8",
-    "zod": "3.22.4"
+    "vscode-languageserver-textdocument": "1.0.12",
+    "web-tree-sitter": "0.24.3",
+    "zod": "3.23.8"
   },
   "scripts": {
     "prepublishOnly": "cd ../ && pnpm compile && cp README.md server/"
